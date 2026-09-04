@@ -1,0 +1,13 @@
+services:
+  shelly-exporter:
+    image: ghcr.io/avikantsrivastava/shelly-wattage-collector:latest
+    restart: unless-stopped
+    ports:
+      - "9001:9001"
+    environment:
+      - SHELLY_HOST=10.0.0.86
+      - SHELLY_USERNAME=admin
+      - SHELLY_PASSWORD=${SHELLY_PASSWORD}
+      - SHELLY_SWITCH_ID=0
+      - SCRAPE_INTERVAL_SECONDS=15
+      - LISTEN_PORT=9001
