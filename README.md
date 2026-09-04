@@ -2,6 +2,8 @@
 
 A Prometheus exporter for Shelly smart plugs that exposes power metrics.
 
+Link: https://us.shelly.com/products/shelly-plug-us-gen4-white
+
 ## Docker
 
 ```bash
