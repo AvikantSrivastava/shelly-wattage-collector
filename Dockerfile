@@ -5,7 +5,7 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY shelly_exporter.py .
+COPY shelly-exporter.py .
 
 ENV SHELLY_HOST=""
 ENV SHELLY_USERNAME="admin"
@@ -15,4 +15,4 @@ ENV LISTEN_PORT="8080"
 
 EXPOSE 8080
 
-CMD ["python", "shelly_exporter.py"]
+CMD ["python", "shelly-exporter.py"]
