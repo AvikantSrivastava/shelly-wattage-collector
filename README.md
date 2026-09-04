@@ -1,9 +1,11 @@
 # shelly-wattage-collector
 
 A Prometheus exporter for Shelly smart plugs that exposes power metrics.
-
 Link: https://us.shelly.com/products/shelly-plug-us-gen4-white
 
+<img width="1184" height="836" alt="Screenshot 2026-09-04 at 3 01 25 AM" src="https://github.com/user-attachments/assets/24e814dd-445f-44a6-bf08-7b6e223dca03" />
+
+# Setup
 ## Docker
 
 ```bash
